@@ -25,6 +25,7 @@ nav{
     display: flex;
     list-style: none;
     gap: 47px;
+    line-height: 79px;
 }
 
 .nav_item_selected{
