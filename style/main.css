@@ -1,0 +1,44 @@
+#main {
+    margin-top: 147px;
+    display: flex; 
+      
+}
+
+#main_text h1{
+    width: 697px;
+    color: #EDEDED;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 59px;
+    position: relative;
+}
+.underline{
+    position: relative;
+    z-index: 1;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 14px; 
+    border-radius: 4px;
+    background: linear-gradient(90deg, #0068FF 9.49%, #00AAC6 123.77%); 
+    border-radius: 4px;
+    z-index: -1;
+}
+
+#main_text p {
+    color: #F4F4F4;
+    font-size: 17px;
+    font-weight: 600;
+    width: 468px;
+}
+
+#image_main {
+    width: 350px;
+  
+    
+}

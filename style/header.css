@@ -2,7 +2,10 @@
 
 #first_section{
     background: linear-gradient(115deg, #0D0046 6.35%, #030722 65.45%);
-    height: 100vh;
+    height:837px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 header{
