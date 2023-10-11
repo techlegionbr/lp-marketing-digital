@@ -17,3 +17,13 @@ body{
 a{
     text-decoration: none;
 }
+
+.content_sections{
+    width: 80%;
+}
+
+@media(max-width: 500px){
+    .content_sections{
+        width: 90%;
+    }
+}

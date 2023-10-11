@@ -14,12 +14,11 @@
 
 <body>
     <div id="root">
-        <section id="first_section">
-            <header>
+        <header>
+            <div id="header_content" class="content_sections">
                 <div id="logo">
                     <img src="./assets/images/logo.png" alt="Logo_Tech_Legion">
                 </div>
-
                 <nav>
                     <li><a class="nav_item_selected" href="#">Página principal</a></li>
                     <li><a class="nav_item" href="#">Serviços</a></li>
@@ -27,21 +26,27 @@
                     <li><a class="nav_item" href="#">Quem somos</a></li>
                     <li><a class="nav_item" href="#">FAQ</a></li>
                 </nav>
-
-            </header>
-            <main id="main">
-                <div id="main_text">
-                    <h1>Marketing digital <br> para o seu <span class="underline">crescimento virtual</span>    
-                    </h1>
-                    <p>Junte-se a nós e faremos crescer sua empresa com estratégias funcionais, para que juntos
-                        alcancemos o sucesso!!</p>
-                </div>
-                <div>
-                    <img id="image_main"
-                        src="./assets/images/personal growth, virtual currencies, artificial intelligence in finance.png"
-                        alt="">
-                </div>
-            </main>
+                <img id="hamburguer_button" src="./assets/icons/Hamburguer_button.png" alt="Hamburguer button">
+            </div>
+        </header>
+        <section id="first_section">
+                <main id="main" class="content_sections">
+                    <div id="main_text">
+                        <h1>Marketing digital <br> para o seu <span class="underline">crescimento virtual</span>
+                        </h1>
+                        <p>Junte-se a nós e faremos crescer sua empresa com estratégias funcionais, para que juntos
+                            alcancemos o sucesso!!</p>
+                        <div id="main_buttons">
+                            <button class="main_button" id="main_first_button">Quero crescer</button>
+                            <button class="main_button" id="main_second_button">Ver serviços</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="image_main"
+                            src="./assets/images/personal growth, virtual currencies, artificial intelligence in finance.png"
+                            alt="">
+                    </div>
+                </main>
         </section>
     </div>
 
