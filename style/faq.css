@@ -25,16 +25,18 @@
 #faq_title span {
     color: #00DBFF;
 }
-
 #faq li {
+    position: relative;
     background: #d9d9d938;
     border-radius: 10px;
     margin-bottom: 1.65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .faq_questions {
-    position: relative;
-    max-width: 65rem;
     height: 5.12rem;
     color: #fff;
     display: flex;
@@ -56,18 +58,22 @@
 }
 
 .faq_questions p {
-    max-width: 38.5rem;
+    opacity: .7;
+    transition: .5s;
+    text-align: center;
 }
 
 .faq_questions i {
     position: absolute;
     font-size: 1.50rem;
     font-weight: 700;
-    right: 1rem;
-    color: #00DBFF;;
+    right: 2rem;
+    color: #00DBFF;
+    transition: .5s;
 }
 
 .faq_response {
+    width: 100%;
     overflow: hidden;
     height: 0;
     transition: .5s;
@@ -76,14 +82,41 @@
 }
 
 .faq_response p {
-    max-width: 37rem;
-    font-size: 1rem;
+    max-width: 600px;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .active {
-    height: 10rem;
+    opacity: 1;
+    height: 11rem;
     transition: .5s;
+    margin-top: 1.5rem;
+}
+
+@media(max-width:950px){
+    .faq_questions p{
+        max-width: 70%;
+    }
+    .faq_response p{
+        max-width:70% ;
+    }
+    .active{
+        height: 18rem;
+    }
+  
+}
+@media(max-width:500px){
+    .faq_questions p{
+        max-width: 50%;
+        
+    }
+    .faq_questions{
+        height: 6.7rem;
+    }
+    .active{
+        height: 25rem;
+    }
 }
