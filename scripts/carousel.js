@@ -1,0 +1,39 @@
+const arrows = document.querySelectorAll('#container_carousel i');
+const cards = document.querySelectorAll('.steps_cards');
+let currentItem = 0;
+const maxIdex = cards.length;
+
+arrows.forEach(e=>{
+    e.addEventListener('click', (arrow)=>{
+        if(arrow.target.id == 'arrow_left'){
+            currentItem -= 1; 
+        }else{
+            currentItem += 1;
+        }
+        if(currentItem > maxIdex - 1){
+            currentItem = 0;
+        }
+        if(currentItem < 0){
+            currentItem = maxIdex - 1;
+        }
+        cards.forEach(card=>{
+            card.classList.remove('current_item')
+        })
+        centerCard();
+       
+        cards[currentItem].classList.add('current_item');
+
+    })
+
+})
+
+const centerCard = ()=>{
+    cards[currentItem].scrollIntoView({
+        inline: 'center',
+        behavior: 'smooth',
+        block: 'nearest'
+    })
+}
+window.addEventListener('resize', centerCard);
+
+

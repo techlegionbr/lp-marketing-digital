@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Digital</title>
+
     <!-- Link Style -->
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/faq.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/steps.css">
 
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Scripts -->
     <script src="./scripts/accordion.js" defer></script>
+    <script src="./scripts/carousel.js" defer></script>
+
 </head>
 
 <body>
@@ -48,12 +52,83 @@
                         <button class="main_button" id="main_second_button">Ver serviços</button>
                     </div>
                 </div>
+
                 <div>
                     <img id="image_main"
                         src="./assets/images/personal growth, virtual currencies, artificial intelligence in finance.png"
                         alt="">
                 </div>
             </main>
+        </section>
+        <section id="section_steps">
+            <div id="content_steps" class="content_sections">
+                <div id="steps_title">
+                    <h1>Nossas Etapas</h1>
+                </div>
+                <div id="container_carousel">
+                    <i id="arrow_left" class='bx bx-chevron-left'></i>
+                    <i id="arrow_right" class='bx bx-chevron-right'></i>
+                    <div id="carousel_gallery">
+                        <div class="steps_cards current_item">
+
+                            <i class='bx bx-search-alt'></i>
+                            <h1>Descoberta</h1>
+                            <p>Identificando o problema</p>
+                            <ul>
+                                <li>Entrevista com o usuário</li>
+                                <li>Entrevista com o stakeholder</li>
+                                <li>Mapeamento do mercado</li>
+                                <li>Pesquisa de mercado</li>
+                            </ul>
+                        </div>
+                        <div class="steps_cards">
+                            <i class='bx bx-target-lock'></i>
+                            <h1>UX Definição</h1>
+                            <p>Identificando comportamentos</p>
+                            <ul>
+                                <li>Entrevista com o usuário</li>
+                                <li>Entrevista com o stakeholder</li>
+                                <li>Mapeamento do mercado</li>
+                            </ul>
+                        </div>
+                        <div class="steps_cards">
+                            <i class='bx bx-bulb'></i>
+                            <h1>UX Ideação</h1>
+                            <p>Desenhando a solução</p>
+                            <ul>
+                                <li>Entrevista com o usuário</li>
+                                <li>Entrevista com o stakeholder</li>
+                                <li>Mapeamento do mercado</li>
+                                <li>Pesquisa de mercado</li>
+                            </ul>
+                        </div>
+                        <div class="steps_cards">
+                            <i class='bx bx-mobile-alt'></i>
+                            <h1>UX/UI Protótipos</h1>
+                            <p>Construindo o produto</p>
+                            <ul>
+                                <li>Entrevista com o usuário</li>
+                                <li>Entrevista com o stakeholder</li>
+                                <li>Mapeamento do mercado</li>
+                                <li>Pesquisa de mercado</li>
+                            </ul>
+                        </div>
+                        <div class="steps_cards">
+                            <i class='bx bx-clipboard'></i>
+                            <h1>UX Testes</h1>
+                            <p>Validando a solução</p>
+                            <ul>
+                                <li>Entrevista com o usuário</li>
+                                <li>Entrevista com o stakeholder</li>
+                                <li>Mapeamento do mercado</li>
+                                <li>Pesquisa de mercado</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
         <section id="faq_section">
             <div id="content_faq" class="content_sections">
@@ -137,7 +212,8 @@
                 <div id="footer_cards">
 
                     <ul>
-                        <a  target="_blank" href="https://api.whatsapp.com/send?phone=555180276708&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tech%20Legion%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.">
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=555180276708&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tech%20Legion%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.">
                             <li class="footer_card">
                                 <i class='bx bxl-whatsapp'></i>
                                 <p>Nosso</p>
@@ -153,30 +229,33 @@
                         </a>
                         <a target="_blank" href="https://www.instagram.com/techlegionbr/">
                             <li class="footer_card">
-                                <i class='bx bxl-instagram' ></i>                                <p>Nosso</p>
+                                <i class='bx bxl-instagram'></i>
+                                <p>Nosso</p>
                                 <h4>Instagram</h4>
                             </li>
                         </a>
                         <a target="_blank" href="https://www.tiktok.com/@techlegionbr">
                             <li class="footer_card">
-                                <i class='bx bxl-tiktok'></i>                                <p>Nosso</p>
+                                <i class='bx bxl-tiktok'></i>
+                                <p>Nosso</p>
                                 <h4>Tiktok</h4>
                             </li>
                         </a>
                         <a target="_blank" href="https://www.facebook.com/techlegionbr">
                             <li class="footer_card">
-                                <i class='bx bxl-facebook-square' ></i>                                <p>Nosso</p>
+                                <i class='bx bxl-facebook-square'></i>
+                                <p>Nosso</p>
                                 <h4>Facebook</h4>
                             </li>
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/company/techlegionbr/">
                             <li class="footer_card">
-                                <i class='bx bxl-linkedin-square' ></i>
+                                <i class='bx bxl-linkedin-square'></i>
                                 <p>Nosso</p>
                                 <h4>Linkedin</h4>
                             </li>
                         </a>
-                        
+
                     </ul>
                 </div>
 

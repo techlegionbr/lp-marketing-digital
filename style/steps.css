@@ -1,0 +1,141 @@
+#section_steps {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(115deg, #0D0046 6.35%, #030722 65.45%);
+    height: 600px;
+}
+
+#content_steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#steps_title h1 {
+    color: #fff;
+    margin: 5.94rem 0 5.04rem 0;
+    font-size: 2.625rem;   
+}
+
+#container_carousel {
+    width:90%;  
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#container_carousel > i{
+    position: absolute;
+    font-size: 3.5rem;
+    color: #030722;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #ffffff3d;
+    border-radius: 50%;
+}
+#container_carousel > i:hover{
+    border: 2px solid #ffffff33;
+}
+
+#arrow_right{
+    right: 0rem;
+ 
+
+}
+#arrow_left{
+    left: 0rem;
+   
+
+}
+#container_carousel::-webkit-scrollbar{
+    display: none ;
+}
+
+#carousel_gallery {
+    width: 47rem;
+    height:19rem ;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+#carousel_gallery i {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 2rem
+}
+.steps_cards {
+    position: relative;
+    width: 15rem;
+    height: 18rem;
+    padding: .8rem;
+    border-radius: 0.625rem;
+    border: 2px solid #ffffff33;
+    background: #09166a57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    flex-shrink: 0; 
+    color: #fff;
+    font-size: .9rem;   
+    transition: height .5s;
+}
+
+.steps_cards h1{
+    margin-top: 4rem;
+    margin-bottom: 1.3rem;
+    
+}
+
+.steps_cards p{
+    margin-bottom: 1rem;   
+}
+
+.steps_cards li{
+    margin-bottom: .2rem;
+}
+.steps_cards ul{
+    list-style-type:disc;
+    margin-left: 1rem;
+}
+
+.current_item{
+    height: 19rem;
+    opacity: 1;
+    border: 2px solid #ffffff6e;
+}
+
+@media (max-width:1250px){
+    #carousel_gallery{
+        width: 31rem;
+    }
+}
+
+@media (max-width:890px) {
+    #carousel_gallery{
+        width: 15rem;
+    }
+}
+
+@media (max-width:540px){
+    #carousel_gallery{
+        width: 12rem;
+    }
+    #container_carousel{
+        width: 100%;
+    } 
+    .steps_cards{
+        width: 12rem;
+        height: 15rem;
+        font-size: .7rem;
+    }
+
+}
+
+
+

@@ -55,13 +55,13 @@ footer {
 .footer_card {
     width: 6.9375rem;
     height: 8.4375rem;
-    border-radius: 0.625rem;
-    border: 2px solid #ffffff33;
-    background: #09166a57;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.8;
+        border-radius: 0.625rem;
+        border: 2px solid #ffffff33;
+        background: #09166a57;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.8;
 }
 
 .footer_card i {
