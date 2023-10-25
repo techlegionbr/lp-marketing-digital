@@ -37,6 +37,7 @@
 }
 #container_carousel > i:hover{
     border: 2px solid #ffffff33;
+    background-color: #ffffff79;
 }
 
 #arrow_right{
@@ -66,7 +67,8 @@
 #carousel_gallery i {
     font-size: 2.5rem;
     position: absolute;
-    top: 2rem
+    top: 1.5rem;
+    color:#00DBFF ;
 }
 .steps_cards {
     position: relative;
