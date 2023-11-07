@@ -10,15 +10,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 3rem;
 }
 
-#faq_title {
+#faq_title  h1{
     color: #f4f4f4;
     text-align: center;
     font-size: 2.625rem;
     font-weight: 700;
     line-height: 4rem;
-    margin: 5.94rem 0 5.04rem 0;
+    margin: 2.94rem 0 2.04rem 0;
 }
 
 #faq_title span {

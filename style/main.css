@@ -1,6 +1,6 @@
 #first_section {
     background: linear-gradient(115deg, #0D0046 6.35%, #030722 65.45%);
-    min-height: 100vh;
+    padding: 0rem 0 3rem 0;
     display: flex;
     justify-content: center;
 }

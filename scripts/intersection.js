@@ -1,5 +1,5 @@
 const listNav = document.querySelectorAll('.nav_item')
-const header = document.querySelector('header')
+const listTarget = document.querySelectorAll("div [rect]");
 
 const updateNav = (section) => {
 
@@ -16,10 +16,9 @@ const handleIntersect = (entries, observer) => {
 
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log(observer)
             listNav.forEach(item => {
-
-                if ("#" + entry.target.id == item.getAttribute('href')) {
+                
+                if ("#" + entry.target.getAttribute('rect') == item.getAttribute('href')) {
                     updateNav(item)
                 }
             })
@@ -38,9 +37,9 @@ const options = {
 
 const observer = new IntersectionObserver(handleIntersect, options);
 
-const listTarget = document.querySelectorAll(".content_sections");
 
 listTarget.forEach(target => {
     observer.observe(target);
 })
 
+console.log(document.querySelectorAll('div [rect]')[0].getAttribute('rect'))
