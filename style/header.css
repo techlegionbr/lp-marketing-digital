@@ -17,9 +17,10 @@ header {
     align-items: center;
 }
 
-#logo img {
+#logo a img {
     width: 153px;
     height: 79px;
+    cursor: pointer;
 }
 
 #header_nav {
@@ -29,7 +30,7 @@ header {
     line-height: 79px;
 }
 
-#header_content i {
+#hamburgerButton {
     display: none;
     color: #F4F4F4;
     cursor: pointer;
@@ -59,7 +60,7 @@ header {
         display: none;
     }
 
-    #header_content i {
+    #hamburgerButton {
         display: inline;
         width: 30px;
     }

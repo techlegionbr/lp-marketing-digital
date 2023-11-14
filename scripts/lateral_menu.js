@@ -7,18 +7,21 @@ const arrow_right_menu = document.querySelector('#arrow_right_menu');
 
 const appearLateralMenu = ()=>{
     lateralMenu.style.right = "0";
-    hamburgerButton.style.display = "none";
+   
 
 }
 
 const disappearLateralMenu = ()=>{
-    lateralMenu.style.right = "-50%";
-    hamburgerButton.style.display = "inline";
+    lateralMenu.style.right = "-55%";
+
+            
 }
 
 const handleClickOutside = (event)=>{
     if(!lateralMenu.contains(event.target) && !hamburgerButton.contains(event.target)){
             disappearLateralMenu();
+          
+
     }
 }
 
