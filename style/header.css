@@ -22,17 +22,18 @@ header {
     height: 79px;
 }
 
-nav {
+#header_nav {
     display: flex;
     list-style: none;
     gap: 47px;
     line-height: 79px;
 }
 
-#hamburguer_button {
+#header_content i {
     display: none;
     color: #F4F4F4;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 
@@ -47,18 +48,18 @@ nav {
     font-size: 1.1rem;
 }
 .appearHeader{
-    height: 8rem;
+    height: 5rem;
     background: #011b46b6;
     backdrop-filter: blur(5px);
 }
 
 
 @media(max-width:1030px) {
-    nav {
+    #header_nav {
         display: none;
     }
 
-    #hamburguer_button {
+    #header_content i {
         display: inline;
         width: 30px;
     }

@@ -37,7 +37,7 @@
 }
 
 .faq_questions {
-    height: 5.12rem;
+    /* height: 5.12rem; */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@
         max-width:70% ;
     }
     .active{
-        height: 18rem;
+        height: 25rem;
     }
   
 }

@@ -1,33 +1,28 @@
-const listNav = document.querySelectorAll('.nav_item')
+const listNav = document.querySelectorAll('.nav_item');
+const lateralListNav = document.querySelectorAll('.lateral_nav_item');
 const listTarget = document.querySelectorAll("div [rect]");
 
-const updateNav = (section) => {
-
-    listNav.forEach(item => {
-        item.classList.remove('current_section')
+const updateNav = (entry, list, className) => {
+    list.forEach(item => {
+        if ("#" + entry.target.getAttribute('rect') == item.getAttribute('href')) {
+            list.forEach(navItem => {
+                navItem.classList.remove(className)
+            })
+            item.classList.add(className);
+        }
     })
-
-    section.classList.add('current_section');
 }
-
-
 
 const handleIntersect = (entries, observer) => {
 
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            listNav.forEach(item => {
-                
-                if ("#" + entry.target.getAttribute('rect') == item.getAttribute('href')) {
-                    updateNav(item)
-                }
-            })
+            updateNav(entry, listNav, "current_section");
+            updateNav(entry, lateralListNav, "lateral_current_section");
         }
-
-    });
-
-
+    })
 }
+
 
 const options = {
     root: null,
@@ -42,4 +37,4 @@ listTarget.forEach(target => {
     observer.observe(target);
 })
 
-console.log(document.querySelectorAll('div [rect]')[0].getAttribute('rect'))
+

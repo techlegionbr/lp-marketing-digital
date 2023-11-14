@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/form.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/steps.css">
+    <link rel="stylesheet" href="./style/lateral_menu.css">
 
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,286 +25,298 @@
     <script src="./scripts/carousel.js" defer></script>
     <script src="./scripts/intersection.js" defer></script>
     <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/lateral_menu.js" defer></script>
 
 </head>
 
 <body>
-    <div id="root">
-        <header>
-            <div id="header_content" class="content_sections">
-                <div id="logo">
-                    <img src="./assets/images/logo.png" alt="Logo_Tech_Legion">
-                </div>
-                <nav>
-                    <li><a class="nav_item current_section" href="#main">Página principal</a></li>
-                    <li><a class="nav_item" href="#content_service">Serviços</a></li>
-                    <li><a class="nav_item" href="#content_steps">Como funciona?</a></li>
-                    <li><a class="nav_item" href="#content_faq">FAQ</a></li>
-                    <li><a class="nav_item" href="#content_form">Contato</a></li>
-                </nav>
-                <img id="hamburguer_button" src="./assets/icons/Hamburguer_button.png" alt="Hamburguer button">
+    <header>
+        <div id="header_content" class="content_sections">
+            <div id="logo">
+                <img src="./assets/images/logo.png" alt="Logo_Tech_Legion">
             </div>
-        </header>
-        <section id="first_section">
-            <main id="main" class="content_sections" rect="main">
-                <div id="main_text">
-                    <h1>Marketing digital <br> para o seu <span class="underline">crescimento virtual</span>
-                    </h1>
-                    <p>Junte-se a nós e faremos crescer sua empresa com estratégias funcionais, para que juntos
-                        alcancemos o sucesso!!</p>
-                    <div id="main_buttons">
-                        <button class="main_button" id="main_first_button">Quero crescer</button>
-                        <button class="main_button" id="main_second_button">Ver serviços</button>
+            <nav id="header_nav">
+                <li><a class="nav_item current_section" href="#main">Página principal</a></li>
+                <li><a class="nav_item" href="#content_service">Serviços</a></li>
+                <li><a class="nav_item" href="#content_steps">Como funciona?</a></li>
+                <li><a class="nav_item" href="#content_faq">FAQ</a></li>
+                <li><a class="nav_item" href="#content_form">Contato</a></li>
+            </nav>
+            <i id="hamburgerButton" class='bx bx-menu'></i>
+        </div>
+        <div id="lateral_menu">
+            <nav>
+                <li><a class="lateral_nav_item lateral_current_section" href="#main">Página principal</a></li>
+                <li><a class="lateral_nav_item" href="#content_service">Serviços</a></li>
+                <li><a class="lateral_nav_item" href="#content_steps">Como funciona?</a></li>
+                <li><a class="lateral_nav_item" href="#content_faq">FAQ</a></li>
+                <li><a class="lateral_nav_item" href="#content_form">Contato</a></li>
+            </nav>
+            <i id="arrow_right_menu" class='bx bx-chevron-right'></i>
+        </div>
+    </header>
+    <section id="first_section">
+        <div id="main" class="content_sections">
+            <div id="main_text" rect="main">
+                <h1>Marketing digital <br> para o seu <span class="underline">crescimento virtual</span>
+                </h1>
+                <p>Junte-se a nós e faremos crescer sua empresa com estratégias funcionais, para que juntos
+                    alcancemos o sucesso!!</p>
+                <div id="main_buttons">
+                    <button class="main_button" id="main_first_button">Quero crescer</button>
+                    <button class="main_button" id="main_second_button">Ver serviços</button>
+                </div>
+            </div>
+
+            <div rect="main">
+                <img id="image_main"
+                    src="./assets/images/personal growth, virtual currencies, artificial intelligence in finance.png"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section id="service_section" rect="content_service">
+        <div id="content_service" class="content_sections">
+            <div id="service_img" rect="content_service">
+                <img src="./assets/images/Mobile Marketing-rafiki.png" alt="Marketing Digital">
+            </div>
+            <div id="service_description" rect="content_service">
+                <h1>Marketing <br> Digital</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, culpa nemo quo vel quisquam possimus ex
+                    necessitatibus perspiciatis
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, culpa nemo quo vel quisquam possimus
+                    ex necessitatibus perspiciatis
+                </p>
+                <button>Fale com a gente</button>
+            </div>
+        </div>
+    </section>
+    <section id="section_steps">
+        <div id="content_steps" class="content_sections">
+            <div id="steps_title">
+                <h1>Nossas Etapas</h1>
+            </div>
+            <div id="container_carousel" rect="content_steps">
+                <i id="arrow_left" class='bx bx-chevron-left'></i>
+                <i id="arrow_right" class='bx bx-chevron-right'></i>
+                <div id="carousel_gallery">
+                    <div class="steps_cards current_item">
+
+                        <i class='bx bx-search-alt'></i>
+                        <h1>Descoberta</h1>
+                        <p>Identificando o problema</p>
+                        <ul>
+                            <li>Entrevista com o usuário</li>
+                            <li>Entrevista com o stakeholder</li>
+                            <li>Mapeamento do mercado</li>
+                            <li>Pesquisa de mercado</li>
+                        </ul>
+                    </div>
+                    <div class="steps_cards">
+                        <i class='bx bx-target-lock'></i>
+                        <h1>UX Definição</h1>
+                        <p>Identificando comportamentos</p>
+                        <ul>
+                            <li>Entrevista com o usuário</li>
+                            <li>Entrevista com o stakeholder</li>
+                            <li>Mapeamento do mercado</li>
+                        </ul>
+                    </div>
+                    <div class="steps_cards">
+                        <i class='bx bx-bulb'></i>
+                        <h1>UX Ideação</h1>
+                        <p>Desenhando a solução</p>
+                        <ul>
+                            <li>Entrevista com o usuário</li>
+                            <li>Entrevista com o stakeholder</li>
+                            <li>Mapeamento do mercado</li>
+                            <li>Pesquisa de mercado</li>
+                        </ul>
+                    </div>
+                    <div class="steps_cards">
+                        <i class='bx bx-mobile-alt'></i>
+                        <h1>UX/UI Protótipos</h1>
+                        <p>Construindo o produto</p>
+                        <ul>
+                            <li>Entrevista com o usuário</li>
+                            <li>Entrevista com o stakeholder</li>
+                            <li>Mapeamento do mercado</li>
+                            <li>Pesquisa de mercado</li>
+                        </ul>
+                    </div>
+                    <div class="steps_cards">
+                        <i class='bx bx-clipboard'></i>
+                        <h1>UX Testes</h1>
+                        <p>Validando a solução</p>
+                        <ul>
+                            <li>Entrevista com o usuário</li>
+                            <li>Entrevista com o stakeholder</li>
+                            <li>Mapeamento do mercado</li>
+                            <li>Pesquisa de mercado</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div rect="main">
-                    <img id="image_main"
-                        src="./assets/images/personal growth, virtual currencies, artificial intelligence in finance.png"
-                        alt="">
-                </div>
-            </main>
-        </section>
-        <section id="service_section" rect="content_service">
-            <div id="content_service" class="content_sections"  >
-                <div id="service_img" rect="content_service">
-                    <img src="./assets/images/Mobile Marketing-rafiki.png" alt="Marketing Digital">
-                </div>
-                <div id="service_description" rect="content_service">
-                    <h1>Marketing <br> Digital</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, culpa nemo quo vel quisquam possimus ex necessitatibus perspiciatis
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, culpa nemo quo vel quisquam possimus ex necessitatibus perspiciatis
-                    </p>
-                    <button>Fale com a gente</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="faq_section">
+        <div id="content_faq" class="content_sections">
+
+            <div id="faq_title" rect="content_faq">
+                <h1>
+                    Dúvidas frequentes <br> sobre nosso serviço de <span>marketing</span>
+                </h1>
+            </div>
+
+            <div rect="content_faq">
+                <ul id="faq">
+                    <li>
+                        <div class="faq_questions ">
+                            <span>1.</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                        <div class="faq_response">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
+                                pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
+                                temporibus facere ipsum iusto placeat? Iure, veniam?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_questions">
+                            <span>2.</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                        <div class="faq_response">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
+                                pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
+                                temporibus facere ipsum iusto placeat? Iure, veniam?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_questions">
+                            <span>3.</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                        <div class="faq_response">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
+                                pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
+                                temporibus facere ipsum iusto placeat? Iure, veniam?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="faq_questions">
+                            <span>4.</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                        <div class="faq_response">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
+                                pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
+                                temporibus facere ipsum iusto placeat? Iure, veniam?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="form_section">
+        <div id="content_form" class="content_sections">
+            <div id="first_box_form" class="boxs_form_section" rect="content_form">
+                <h1>Solicitar contato para <br>
+                    serviço de marketig digital</h1>
+                <hr>
+                <div id="first_box_description">
+                    <p>Para solicitar contato, preencha as informações ao lado</p>
+                    <i class='bx bx-arrow-back'></i>
                 </div>
             </div>
-        </section>
-        <section id="section_steps">
-            <div id="content_steps" class="content_sections">
-                <div id="steps_title">
-                    <h1>Nossas Etapas</h1>
-                </div>
-                <div id="container_carousel" rect="content_steps">
-                    <i id="arrow_left" class='bx bx-chevron-left'></i>
-                    <i id="arrow_right" class='bx bx-chevron-right'></i>
-                    <div id="carousel_gallery">
-                        <div class="steps_cards current_item">
-
-                            <i class='bx bx-search-alt'></i>
-                            <h1>Descoberta</h1>
-                            <p>Identificando o problema</p>
-                            <ul>
-                                <li>Entrevista com o usuário</li>
-                                <li>Entrevista com o stakeholder</li>
-                                <li>Mapeamento do mercado</li>
-                                <li>Pesquisa de mercado</li>
-                            </ul>
-                        </div>
-                        <div class="steps_cards">
-                            <i class='bx bx-target-lock'></i>
-                            <h1>UX Definição</h1>
-                            <p>Identificando comportamentos</p>
-                            <ul>
-                                <li>Entrevista com o usuário</li>
-                                <li>Entrevista com o stakeholder</li>
-                                <li>Mapeamento do mercado</li>
-                            </ul>
-                        </div>
-                        <div class="steps_cards">
-                            <i class='bx bx-bulb'></i>
-                            <h1>UX Ideação</h1>
-                            <p>Desenhando a solução</p>
-                            <ul>
-                                <li>Entrevista com o usuário</li>
-                                <li>Entrevista com o stakeholder</li>
-                                <li>Mapeamento do mercado</li>
-                                <li>Pesquisa de mercado</li>
-                            </ul>
-                        </div>
-                        <div class="steps_cards">
-                            <i class='bx bx-mobile-alt'></i>
-                            <h1>UX/UI Protótipos</h1>
-                            <p>Construindo o produto</p>
-                            <ul>
-                                <li>Entrevista com o usuário</li>
-                                <li>Entrevista com o stakeholder</li>
-                                <li>Mapeamento do mercado</li>
-                                <li>Pesquisa de mercado</li>
-                            </ul>
-                        </div>
-                        <div class="steps_cards">
-                            <i class='bx bx-clipboard'></i>
-                            <h1>UX Testes</h1>
-                            <p>Validando a solução</p>
-                            <ul>
-                                <li>Entrevista com o usuário</li>
-                                <li>Entrevista com o stakeholder</li>
-                                <li>Mapeamento do mercado</li>
-                                <li>Pesquisa de mercado</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
+            <div id="second_box_form" class="boxs_form_section" rect="content_form">
+                <div id="form"></div>
             </div>
-        </section>
-        <section id="faq_section">
-            <div id="content_faq" class="content_sections">
 
-                <div id="faq_title" rect="content_faq">
-                    <h1 >
-                        Dúvidas frequentes <br> sobre nosso serviço de <span>marketing</span>
-                    </h1>
-                </div>
+        </div>
+    </section>
+    <footer>
+        <div id="content_footer" class="content_sections">
+            <div id="footer_title">
+                <h1>Nossas <br> <span>REDES SOCIAIS</span></h1>
+                <img src="./assets/images/Logo_Tech_Legion_H_02_Blue.png" alt="Logo_Tech_Legion">
+            </div>
+            <div id="footer_cards">
 
-                <div rect="content_faq">
-                    <ul id="faq">
-                        <li>
-                            <div class="faq_questions ">
-                                <span>1.</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                                <i class='bx bxs-down-arrow'></i>
-                            </div>
-                            <div class="faq_response">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
-                                    pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
-                                    temporibus facere ipsum iusto placeat? Iure, veniam?
-                                </p>
-                            </div>
+                <ul>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=555180276708&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tech%20Legion%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.">
+                        <li class="footer_card">
+                            <i class='bx bxl-whatsapp'></i>
+                            <p>Nosso</p>
+                            <h4>Whatsapp</h4>
                         </li>
-                        <li>
-                            <div class="faq_questions">
-                                <span>2.</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                                <i class='bx bxs-down-arrow'></i>
-                            </div>
-                            <div class="faq_response">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
-                                    pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
-                                    temporibus facere ipsum iusto placeat? Iure, veniam?
-                                </p>
-                            </div>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/techlegionbr">
+                        <li class="footer_card">
+                            <i class='bx bxl-twitter'></i>
+                            <p>Nosso</p>
+                            <h4>Twitter</h4>
                         </li>
-                        <li>
-                            <div class="faq_questions">
-                                <span>3.</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                                <i class='bx bxs-down-arrow'></i>
-                            </div>
-                            <div class="faq_response">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
-                                    pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
-                                    temporibus facere ipsum iusto placeat? Iure, veniam?
-                                </p>
-                            </div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/techlegionbr/">
+                        <li class="footer_card">
+                            <i class='bx bxl-instagram'></i>
+                            <p>Nosso</p>
+                            <h4>Instagram</h4>
                         </li>
-                        <li>
-                            <div class="faq_questions">
-                                <span>4.</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                                <i class='bx bxs-down-arrow'></i>
-                            </div>
-                            <div class="faq_response">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio deserunt ipsum
-                                    pariatur autem, quas, rem architecto neque maxime illo minima maiores aliquam? Nihil
-                                    temporibus facere ipsum iusto placeat? Iure, veniam?
-                                </p>
-                            </div>
+                    </a>
+                    <a target="_blank" href="https://www.tiktok.com/@techlegionbr">
+                        <li class="footer_card">
+                            <i class='bx bxl-tiktok'></i>
+                            <p>Nosso</p>
+                            <h4>Tiktok</h4>
                         </li>
-                    </ul>
-                </div>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/techlegionbr">
+                        <li class="footer_card">
+                            <i class='bx bxl-facebook-square'></i>
+                            <p>Nosso</p>
+                            <h4>Facebook</h4>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/company/techlegionbr/">
+                        <li class="footer_card">
+                            <i class='bx bxl-linkedin-square'></i>
+                            <p>Nosso</p>
+                            <h4>Linkedin</h4>
+                        </li>
+                    </a>
+
+                </ul>
             </div>
-        </section>
-        <section id="form_section">
-            <div id="content_form" class="content_sections">
-                <div id="first_box_form" class="boxs_form_section" rect="content_form">
-                    <h1>Solicitar contato para <br>
-                        serviço de marketig digital</h1>
-                        <hr>
-                        <div id="first_box_description">
-                            <p>Para solicitar contato, preencha as informações ao lado</p>
-                            <i class='bx bx-arrow-back'></i>
-                        </div>
-                </div>
-                <div id="second_box_form" class="boxs_form_section" rect="content_form">
-                    <div id="form"></div>
-                </div>
 
-            </div>
-        </section>
-        <footer>
-            <div id="content_footer" class="content_sections">
-                <div id="footer_title">
-                    <h1>Nossas <br> <span>REDES SOCIAIS</span></h1>
-                    <img src="./assets/images/Logo_Tech_Legion_H_02_Blue.png" alt="Logo_Tech_Legion">
-                </div>
-                <div id="footer_cards">
+        </div>
+        <p id="footer_copyright">&copy; Tech Legion, 2023. All Rights Reserved</p>
+    </footer>
 
-                    <ul>
-                        <a target="_blank"
-                            href="https://api.whatsapp.com/send?phone=555180276708&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tech%20Legion%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.">
-                            <li class="footer_card">
-                                <i class='bx bxl-whatsapp'></i>
-                                <p>Nosso</p>
-                                <h4>Whatsapp</h4>
-                            </li>
-                        </a>
-                        <a target="_blank" href="https://twitter.com/techlegionbr">
-                            <li class="footer_card">
-                                <i class='bx bxl-twitter'></i>
-                                <p>Nosso</p>
-                                <h4>Twitter</h4>
-                            </li>
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/techlegionbr/">
-                            <li class="footer_card">
-                                <i class='bx bxl-instagram'></i>
-                                <p>Nosso</p>
-                                <h4>Instagram</h4>
-                            </li>
-                        </a>
-                        <a target="_blank" href="https://www.tiktok.com/@techlegionbr">
-                            <li class="footer_card">
-                                <i class='bx bxl-tiktok'></i>
-                                <p>Nosso</p>
-                                <h4>Tiktok</h4>
-                            </li>
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/techlegionbr">
-                            <li class="footer_card">
-                                <i class='bx bxl-facebook-square'></i>
-                                <p>Nosso</p>
-                                <h4>Facebook</h4>
-                            </li>
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/company/techlegionbr/">
-                            <li class="footer_card">
-                                <i class='bx bxl-linkedin-square'></i>
-                                <p>Nosso</p>
-                                <h4>Linkedin</h4>
-                            </li>
-                        </a>
-
-                    </ul>
-                </div>
-
-            </div>
-            <p id="footer_copyright">&copy; Tech Legion, 2023. All Rights Reserved</p>
-        </footer>
-    </div>
 </body>
 
 </html>
