@@ -28,7 +28,7 @@
 #faq li {
     position: relative;
     background: #d9d9d938;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     margin-bottom: 1.65rem;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
 }
 
 .faq_response p {
-    max-width: 600px;
+    max-width: 37.5rem;
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff;

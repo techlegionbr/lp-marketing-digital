@@ -1,8 +1,10 @@
 const arrows = document.querySelectorAll('#container_carousel i');
 const cards = document.querySelectorAll('.steps_cards');
-let currentItem = 0;
 const maxIdex = cards.length;
 
+let currentItem = 0;
+
+// Checking whether the style will be removed from just one question or all.
 arrows.forEach(e=>{
     e.addEventListener('click', (arrow)=>{
         if(arrow.target.id == 'arrow_left'){
@@ -19,14 +21,14 @@ arrows.forEach(e=>{
         cards.forEach(card=>{
             card.classList.remove('current_item')
         })
+
         centerCard();
-       
+
         cards[currentItem].classList.add('current_item');
-
     })
-
 })
 
+// Centering the current card.
 const centerCard = ()=>{
     cards[currentItem].scrollIntoView({
         inline: 'center',
@@ -34,6 +36,8 @@ const centerCard = ()=>{
         block: 'nearest'
     })
 }
+
+// Centering the card when changing the screen size.
 window.addEventListener('resize', centerCard);
 
 

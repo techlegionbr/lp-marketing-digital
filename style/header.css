@@ -18,15 +18,15 @@ header {
 }
 
 #logo a img {
-    width: 153px;
-    height: 79px;
+    width: 9.563rem;
+    height: 4.938rem;
     cursor: pointer;
 }
 
 #header_nav {
     display: flex;
     list-style: none;
-    gap: 47px;
+    gap: 2.938rem;
     line-height: 79px;
 }
 
@@ -62,6 +62,6 @@ header {
 
     #hamburgerButton {
         display: inline;
-        width: 30px;
+        width: 1.875rem;
     }
 }

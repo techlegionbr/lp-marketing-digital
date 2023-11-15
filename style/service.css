@@ -22,7 +22,7 @@
     justify-content: center;
 }
 #service_description h1{
-    max-width: 697px;
+    max-width: 43.563rem;
     color: #EDEDED;
     font-size: 2.75rem;
     font-weight: 700;
@@ -36,11 +36,11 @@
     background: linear-gradient(264deg, #02CFF1 -8.94%, #00A3FF 78.67%);
     color: #110D3E;
     border: none;
-    width: 158px;
-    height: 54px;
-    font-size: 17px;
+    width: 9.875rem;
+    height:3.375rem;
+    font-size: 1.063rem;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 3.25rem;
     cursor: pointer;
 }
 
